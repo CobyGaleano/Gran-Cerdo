@@ -95,6 +95,7 @@ int main()
         }
         break;
         case 3:{
+                cerditos ();
                 rlutil :: anykey();
         }
         break;
