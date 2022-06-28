@@ -10,6 +10,7 @@ void cargarnombres(string nombre[],string appelido[],const int cant);
 int quienempieza(int dados[], int cant,string nombre[],string apellido[]);
 void pantalla_de_juego(string nombre,int jugador,int trufas_x_jug[],int nro_ronda,int trufasronda,int nro_lanzamiento);
 void centrartexto(string texto,int posy);
+void cerditos(void);
 
 
 ///lanzamiento del dado
@@ -171,5 +172,17 @@ void pantalla_de_juego(string nombre[],int jugador,int trufas_x_jug[],int nro_ro
     trufas_x_jug[jugador] += dados[0] + dados[1];
 }
 
+///*CREDITOS DEL JUEGO*///
 
+void cerditos(void){
+    rlutil::cls();
+    centrartexto("IDEA ORIGINAL CREADA POR ANGEL SIMON",1);
+    centrartexto("Codigo creado por:",3);
+    centrartexto("27235 - Mariano Stoessel",4);
+    centrartexto("26885 - Elias Garcia",5);
+    centrartexto("26232 - Tomas Manfredi",6);
+    centrartexto("26911 - Brian Galeano",7);
+    centrartexto("GRACIAS POR JUGAR!",9);
+
+}
 #endif // FUNCIONES_H_INCLUDED
